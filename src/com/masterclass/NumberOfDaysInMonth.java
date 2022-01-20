@@ -29,6 +29,7 @@ public class NumberOfDaysInMonth {
                 case 4:
                 case 6:
                 case 9:
+                case 11:
                     days = 30;
                     break;
                 case 1:
@@ -37,7 +38,6 @@ public class NumberOfDaysInMonth {
                 case 7:
                 case 8:
                 case 10:
-                case 11:
                 case 12:
                     days = 31;
                     break;
@@ -49,7 +49,7 @@ public class NumberOfDaysInMonth {
         }
 
     public static void main(String[] args) {
-        System.out.println(getDaysinMonth(2,2016));
+        System.out.println(getDaysinMonth(2,1924));
     }
 }
 
