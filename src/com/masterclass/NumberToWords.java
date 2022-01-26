@@ -88,5 +88,7 @@ public class NumberToWords {
 
     public static void main(String[] args) {
         numberToWords(3420);
+        String s = "hello";
+        System.out.println(s.charAt(1));
     }
 }
