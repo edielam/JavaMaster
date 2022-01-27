@@ -6,7 +6,7 @@ public class FlourPacker {
             return false;
         }
         if((5*bigCount)+smallCount >= goal){
-            if((5*bigCount) < goal){
+            if((5*bigCount) <= goal){
                 return true;
             }
         }
@@ -14,6 +14,6 @@ public class FlourPacker {
     }
 
     public static void main(String[] args) {
-        System.out.println(canPack(1, 0, 14));
+        System.out.println(canPack(1, 0, 5));
     }
 }
