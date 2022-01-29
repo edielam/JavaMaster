@@ -7,12 +7,12 @@ public class AllFactors{
         }
         for(int i = 1; i <= number; i++){
             if(number % i == 0){
-                System.out.println(i);
+                System.out.print(i+ " ");
             }
         }
     }
 
     public static void main(String[] args) {
-        printFactors(6);
+        printFactors(100);
     }
 }
