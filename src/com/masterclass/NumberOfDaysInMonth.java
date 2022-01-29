@@ -11,7 +11,7 @@ public class NumberOfDaysInMonth {
             }
             return false;
         }
-        public static int getDaysinMonth(int month, int year){
+        public static int getDaysInMonth(int month, int year){
             if (month <1 || month > 12){
                 return -1;
             }
@@ -49,7 +49,7 @@ public class NumberOfDaysInMonth {
         }
 
     public static void main(String[] args) {
-        System.out.println(getDaysinMonth(2,1924));
+        System.out.println(getDaysInMonth(2,1924));
     }
 }
 
