@@ -16,6 +16,9 @@ public class LargestPrime {
                 }
             }
         }
+        if (ans ==0){
+            return -1;
+        }
         return  ans;
     }
     public static boolean primeNumber(int number){
@@ -50,6 +53,6 @@ public class LargestPrime {
     public static void main(String[] args) {
         System.out.println(primeNumber(50));
         System.out.println(Arrays.toString(factors(50)));
-        System.out.println(getLargestPrime(50));
+        System.out.println(getLargestPrime(-1));
     }
 }
