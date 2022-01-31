@@ -7,5 +7,5 @@ public class Calculator{
 	this.floor = floor;
 	this.carpet = carpet;
     }
-    public 
+    public double getT
 }
