@@ -4,9 +4,9 @@ public class Floor{
     private double width;
     private double length;
 
-    public Floot(double width, double length){
+    public Floor(double width, double length){
 	if(width < 0){
-	    this.width = ;
+	    this.width = 0;
 	}
 	else{
 	    this.width = width;
@@ -16,7 +16,7 @@ public class Floor{
 	    this.length = 0;
 	}
 	else{
-	    this.length = lenght;
+	    this.length = length;
 	}
 	public double getArea(){
 	    return this.width * this.length;
