@@ -12,11 +12,16 @@ public class Test {
 //        ed.setHeight(-1.5);
 //        System.out.println(ed.getWidth());
 //        System.out.println(ed.getHeight());
-        Point first = new Point(6, 5);
-        Point second = new Point(3,1);
-        System.out.println(first.distance());
-        System.out.println(first.distance(second));
-        Point point = new Point();
-        System.out.println(first.distance(2, 2));
+//        Point first = new Point(6, 5);
+//        Point second = new Point(3,1);
+//        System.out.println(first.distance());
+//        System.out.println(first.distance(second));
+//        Point point = new Point();
+//        System.out.println(first.distance(2, 2));
+        Carpet carpet = new Carpet(1.5);
+        Floor floor = new Floor(5.4,4.5);
+        Calculator calculator = new Calculator(floor, carpet);
+        System.out.println(calculator.getTotalCost());
+
     }
 }
