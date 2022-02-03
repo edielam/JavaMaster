@@ -18,10 +18,14 @@ public class Test {
 //        System.out.println(first.distance(second));
 //        Point point = new Point();
 //        System.out.println(first.distance(2, 2));
-        Carpet carpet = new Carpet(1.5);
-        Floor floor = new Floor(5.4,4.5);
-        Calculator calculator = new Calculator(floor, carpet);
-        System.out.println(calculator.getTotalCost());
+//        Carpet carpet = new Carpet(1.5);
+//        Floor floor = new Floor(5.4,4.5);
+//        Calculator calculator = new Calculator(floor, carpet);
+//        System.out.println(calculator.getTotalCost());
+        Circle circle = new Circle(3.75);
+        System.out.println(circle.getRadius());
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+        System.out.println(cylinder.getVolume());
 
     }
 }
