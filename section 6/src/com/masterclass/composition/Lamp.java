@@ -1,4 +1,4 @@
-package com.masterclass;
+package com.masterclass.composition;
 
 public class Lamp{
     private String style;

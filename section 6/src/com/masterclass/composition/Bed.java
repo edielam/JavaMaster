@@ -1,4 +1,4 @@
-package com.masterslass;
+package com.masterslass.composition;
 
 public class Bed{
     private String style;
