@@ -26,4 +26,11 @@ public class Car{
     public String getName(){
 	    return this.name;
     }
+
+    public static void main(String[] args) {
+        Car car = new Car(5, "Base");
+        System.out.println(car.brake());
+        Ford ford = new Ford(9,"Ford gunner");
+        System.out.println(ford.accelerate());
+    }
 }
