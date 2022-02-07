@@ -2,7 +2,7 @@ package com.masterclass.poly;
 
 public class Mitsubishi extends Car{
     public Mitsubishi(int cylinders, String name){
-	    super(cylinders, name);
+	    super(cylinders, "Mitsubishi");
     }
     @Override
     public String startEngine(){
