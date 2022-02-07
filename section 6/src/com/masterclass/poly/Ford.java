@@ -14,14 +14,14 @@ public class Ford extends Car{
     }
     @Override
     public String brake(){
-        return super.brake()
+        return super.brake();
     }
     @Override
     public int getCylinders(){
         return super.getCylinders();
     }
     @Override
-    public Sting getName(){
+    public String getName(){
         return super.getName();
     }
 }

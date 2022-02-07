@@ -6,24 +6,24 @@ public class Car{
     private String name;
     private int wheels;
     public Car(int cylinders, String name){
-	this.wheels = 4;
-	this.engine = true;
-	this.cylinders = cylinders;
-	this.name = name;
+        this.wheels = 4;
+        this.engine = true;
+        this.cylinders = cylinders;
+        this.name = name;
     }
-    public String starEngine(){
-	return this.name+" car is starting...";
+    public String startEngine(){
+	    return this.name+" car is starting...";
     }
     public String accelerate(){
-	return this.name+" car is accelerating...";
+	    return this.name+" car is accelerating...";
     }
     public String brake(){
-	return this.name+" car is braking...";
+	    return this.name+" car is braking...";
     }
     public int getCylinders(){
-	return this.cylinders;
+	    return this.cylinders;
     }
     public String getName(){
-	return this.name;
+	    return this.name;
     }
 }
