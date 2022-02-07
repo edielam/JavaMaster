@@ -11,14 +11,14 @@ public class Car{
 	this.cylinders = cylinders;
 	this.name = name;
     }
-    public void starEngine(){
-	System.out.println(this.name+" car is starting...")
+    public String starEngine(){
+	return this.name+" car is starting...";
     }
-    public void accelerate(){
-	System.out.println(this.name+" car is accelerating...")
+    public String accelerate(){
+	return this.name+" car is accelerating...";
     }
-    public void brake(){
-	System.out.println(this.name+" car is braking...")
+    public String brake(){
+	return this.name+" car is braking...";
     }
     public int getCylinders(){
 	return this.cylinders;
