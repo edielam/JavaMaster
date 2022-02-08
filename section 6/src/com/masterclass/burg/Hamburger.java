@@ -21,22 +21,38 @@ public class Hamburger{
     private double addition4Price;
 
     public void addHamburgerAddition1(String name, double price){
-        System.out.println("Added one "+name+" at a price of "+price);
-        this.price += price;
+        this.addition1Name = name;
+        this.addition1Price = price;
+        System.out.println("Added one "+this.addition1Name+" at a price of "+price);
     }
     public void addHamburgerAddition2(String name, double price){
-	    System.out.println("Added one "+name+" at a price of "+price);
-        this.price += price;
+        this.addition2Name = name;
+        this.addition2Price = price;
+        System.out.println("Added one "+this.addition2Name+" at a price of "+price);
     }
     public void addHamburgerAddition3(String name, double price){
-	    System.out.println("Added one "+name+" at a price of "+price);
-        this.price += price;
+        this.addition3Name = name;
+        this.addition3Price = price;
+        System.out.println("Added one "+this.addition3Name+" at a price of "+price);
     }
     public void addHamburgerAddition4(String name, double price){
-	    System.out.println("Added one "+name+" at a price of "+price);
-        this.price += price;
+        this.addition4Name = name;
+        this.addition4Price = price;
+        System.out.println("Added one "+this.addition4Name+" at a price of "+price);
     }
-    public double itemizehamhamburger(){
+    public double itemizeHamburger(){
+        if(this.addition1Name != null){
+            this.price += this.addition1Price;
+        }
+        if(this.addition2Name != null){
+            this.price += this.addition2Price;
+        }
+        if(this.addition3Name != null){
+            this.price += this.addition3Price;
+        }
+        if(this.addition4Name != null){
+            this.price += this.addition4Price;
+        }
         return this.price;
     }
 }
