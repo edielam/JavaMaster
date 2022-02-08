@@ -10,7 +10,7 @@ public class Palindrome{
 	int test = this.x;
 	while(test > 9){
 	    y = y*10 + (test % 10);
-	    test.x /= test;
+	    test /= test;
 	}
 	if( test <= 9){
 	    y = (y*10) +test;
