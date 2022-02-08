@@ -5,24 +5,27 @@ public class Palindrome{
     public Palindrome(int x){
 		this.x = x;
 	}
-	public int isPalindrome(){
+	public boolean isPalindrome(){
 		int y = 0;
 		int test = this.x;
+		if(this.x < 0){
+			return false;
+		}
 		while(test > 9){
 			y = y*10 + (test % 10);
-			test /= test;
+			test /= 10;
 		}
 		if( test <= 9){
 			y = (y*10) +test;
 		}
 		if (y == this.x){
-			return y;
+			return true;
 		}
-		return y;
+		return false;
     }
 
 	public static void main(String[] args) {
-		Palindrome palindrome = new Palindrome(121);
+		Palindrome palindrome = new Palindrome(-121);
 		System.out.println(palindrome.isPalindrome());
 	}
 }
