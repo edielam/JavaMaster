@@ -17,4 +17,20 @@ public class SortedArray {
             System.out.println("Element "+i+" contents "+show[i]);
         }
     }
+    public int[] sortIntegers(int[] unsorted) {
+        int temp;
+        boolean test = true;
+        while (test) {
+            test = false;
+            for(int i = 0; i< unsorted.length-1; i++){
+                if(unsorted[i] < unsorted[i+1]){
+                    temp = unsorted[i];
+                    unsorted[i] = unsorted[i+1];
+                    unsorted[i+1] = temp;
+                    test = true;
+                }
+            }
+        }
+        return unsorted;
+    }
 }

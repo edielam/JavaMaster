@@ -7,5 +7,7 @@ public class Test {
         SortedArray eg = new SortedArray();
         int[] ans = eg.getIntegers(5);
         eg.printArray(ans);
+        int[] ans2 = eg.sortIntegers(ans);
+        eg.printArray(ans2);
     }
 }
