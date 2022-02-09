@@ -3,22 +3,23 @@ package com.arrays;
 import java.util.Arrays;
 
 public class ReverseArray {
-    public static int[] reverse(int[] array){
+    public static void reverse(int[] array){
         int temp;
         int j = array.length -1;
-        while(j >= 0){
-            for(int i = 0 ; i < j; i++){
+        System.out.println("Array = "+ Arrays.toString(array));
+        while(j >= 0) {
+            for (int i = 0; i < j; i++) {
                 temp = array[i];
-                array[i] = array[i+1];
-                array[i+1] = temp;
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
             }
             j--;
         }
-        return array;
+        System.out.println("Reversed array = "+Arrays.toString(array));
     }
 
     public static void main(String[] args) {
         int[] ans = {1,2,3,4,5};
-        System.out.println(Arrays.toString(reverse(ans)));
+        reverse(ans);
     }
 }
