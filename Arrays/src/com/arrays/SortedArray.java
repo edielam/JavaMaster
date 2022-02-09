@@ -12,4 +12,9 @@ public class SortedArray {
         }
         return ans;
     }
+    public void printArray(int[] show){
+        for(int i=0; i< show.length; i++){
+            System.out.println("Element "+i+" contents "+show[i]);
+        }
+    }
 }

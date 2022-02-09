@@ -6,6 +6,6 @@ public class Test {
     public static void main(String[] args) {
         SortedArray eg = new SortedArray();
         int[] ans = eg.getIntegers(5);
-        System.out.println(Arrays.toString(ans));
+        eg.printArray(ans);
     }
 }
