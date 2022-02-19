@@ -10,7 +10,7 @@ public class Contact {
     public String getName(){
         return this.name;
     }
-    private String getPhoneNumber(){
+    public String getPhoneNumber(){
         return this.phoneNumber;
     }
     public static Contact createContact(String name, String phoneNumber){
