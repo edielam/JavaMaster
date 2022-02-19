@@ -1,7 +1,5 @@
 package com.arrays;
 
-import java.io.StringBufferInputStream;
-
 public class Contact {
     private String name;
     private String phoneNumber;
