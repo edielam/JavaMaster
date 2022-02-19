@@ -52,7 +52,7 @@ public class MobilePhone{
             return false;
         }
         this.myContacts.remove(foundPosition);
-        System.out.println(contact.getName()+", was replaced with "+newContact.getName());
+        System.out.println(contact.getName()+", was deleted ");
         return true;
     }
 }
