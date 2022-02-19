@@ -59,6 +59,7 @@ public class MobilePhone{
         return true;
     }
     public void printContacts(){
+        System.out.println("Contact List:");
         for(int i =0; i<this.myContacts.size(); i++){
             Contact contact = this.myContacts.get(i);
             System.out.println(i+1+". "+contact.getName()+" -> "+contact.getPhoneNumber());
