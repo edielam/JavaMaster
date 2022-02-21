@@ -18,6 +18,6 @@ public class Customer {
         return name;
     }
     public ArrayList<Double> getTransactions(){
-        return transactions;
+        return this.transactions;
     }
 }
