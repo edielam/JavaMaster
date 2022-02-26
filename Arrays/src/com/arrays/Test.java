@@ -59,7 +59,7 @@ public class Test {
         albums.get(1).addToPlayList(3, playList);
         albums.get(1).addToPlayList(2, playList);
         albums.get(1).addToPlayList(24, playList);  // There is no track 24
-
+        printMenu();
         play(playList);
 
     }
@@ -133,6 +133,16 @@ public class Test {
                 case 5:
                     printMenu();
                     break;
+                case 6:
+                    if(playList.size()>0){
+                        listIterator.remove();
+                        if(listIterator.hasNext()){
+                            System.out.println("Now playing "+listIterator.next());
+                        } else if (listIterator.hasPrevious()){
+                            System.out.println("Now playing "+listIterator.previous());
+                        }
+                    }
+                    break;
             }
         }
     }
@@ -143,7 +153,8 @@ public class Test {
                 "2 - to play previous song\n"+
                 "3 - replay the current song\n"+
                 "4 - list songs in the playlist\n"+
-                "5 - print available actions.");
+                "5 - print available actions.\n"+
+                "6 - delete current song from playlist");
     }
     private static void printList(LinkedList<Song> playList){
         Iterator<Song> iterator = playList.iterator();
