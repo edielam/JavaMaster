@@ -106,11 +106,26 @@ public class Test {
                     if(listIterator.hasPrevious()){
                         System.out.println("Now playing "+listIterator.previous().toString());
                     }else{
-                        System.out.println("We have are at the start of the playlist");
+                        System.out.println("We are at the start of the playlist");
                         forward = true;
                     }
                     break;
                 case 3:
+                    if(forward){
+                        if(listIterator.hasPrevious()){
+                            System.out.println("Now playing "+listIterator.previous().toString());
+                            forward = false;
+                        }else{
+                            System.out.println("We are at the start of the list");
+                        }
+                    } else {
+                        if(listIterator.hasNext()){
+                            System.out.println("Now replaying "+listIterator.next().toString());
+                            forward = true;
+                        }else{
+                            System.out.println("We have reached the end of the list");
+                        }
+                    }
                     break;
                 case 4:
                     printList(playList);
